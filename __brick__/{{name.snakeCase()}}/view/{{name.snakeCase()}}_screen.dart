@@ -43,7 +43,7 @@ class _{{name.pascalCase()}}ScreenState extends State<_{{name.pascalCase()}}Scre
   return Scaffold(
     appBar: const CustomAppBar(title: AppStrings.{{name.pascalCase()}}),
     backgroundColor: AppColors.themeColor,
-    body: BlocConsumer<{{name.pascalCase()}}Bloc, {{name.pascalCase()}}Bloc>(
+    body: BlocConsumer<{{name.pascalCase()}}Bloc, {{name.pascalCase()}}State>(
       listener: (context, state) {
         if (state.status == {{name.pascalCase()}}StateStatus.success) {
           // ToastCustom.showToast(msg: state.responseMessage ?? '');
